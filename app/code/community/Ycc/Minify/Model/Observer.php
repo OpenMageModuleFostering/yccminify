@@ -26,4 +26,3 @@ class Ycc_Minify_Model_Observer
         }
 }
 ?>
-

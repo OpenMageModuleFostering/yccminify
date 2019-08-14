@@ -1,23 +1,37 @@
 <?xml version="1.0"?>
 <package>
     <name>YccMinify</name>
-    <version>0.1.0</version>
+    <version>0.1.2</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/OSL-3.0">OSL-3.0</license>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL-3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Minify your merged CSS,JS file and HTML page!!!&#xD;
 Improve your SEO!</summary>
-    <description>It's a really light module to allow you to minify CSS/JS and Html.&#xD;
+    <description>Release 0.1.2: fix the xml document compression bug.&#xD;
 &#xD;
-No complicated configuration, it support CE1.5.0 later and EE1.8.0 later!</description>
-    <notes>It's a really light module to allow you to minify CSS/JS and Html.&#xD;
+This small extension reduces overall size of all html documents and all CSS/JS which are send to customer browser. It can save about 10 - 15% of original file size by removing all unnecessary comments, whitespaces and new lines from documents and CSS/JS. As a result you'll get some performance boost, and you also get higher score from google pagespeed, and it helps your SEO!&#xD;
+&#xD;
+Minify your CSS/JS and HTML for magento, and your website will be faster!!&#xD;
+&#xD;
+It's a really light module to allow you to minify CSS/JS and Html.&#xD;
+&#xD;
+No complicated configuration, it support CE1.5.0 later and EE1.8.0 later!&#xD;
+&#xD;
+You can test your page on http://developers.google.com/speed/pagespeed/insights/ &#xD;
+You will get higher score!</description>
+    <notes>XML minify bug fixed version 0.1.2&#xD;
+&#xD;
+For xml problem:&#xD;
+Fatal error: Call to a member function extend() on a non-object in /home/domainname/public_html/lib/Varien/Simplexml/Config.php on line 600&#xD;
+&#xD;
+It's a really light module to allow you to minify CSS/JS and Html.&#xD;
 &#xD;
 No complicated configuration, it support CE1.5.0 later and EE1.8.0 later!</notes>
     <authors><author><name>Yongcheng CHEN</name><user>yongcheng</user><email>yongcheng.ch@gmail.com</email></author></authors>
-    <date>2014-03-20</date>
-    <time>00:59:03</time>
-    <contents><target name="magecommunity"><dir name="Ycc"><dir name="Minify"><dir name="Helper"><file name="Data.php" hash="c76552b8ca8cb6f92989ec73e979e691"/></dir><dir name="Model"><file name="Observer.php" hash="5cca0ae0a054f7d9c6cf4a036b9c3351"/><dir name="System"><dir name="Config"><file name="Csscompressor.php" hash="4d974633c8490311dd9b9de43aa6c0c4"/><file name="Jscompressor.php" hash="fe8ea761560f949c844220f04704c3ff"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="479b12a6750d7d5b4c56bd49d30724fe"/><file name="system.xml" hash="128b22e567d24a0f64caeaa737244452"/></dir></dir></dir></target><target name="magelib"><dir name="yccminify"><file name="HTML.php" hash="12c43b16cc5f1a2acf9d734a1ab8849b"/><file name="closurecompiler.jar" hash="d07b1f5a81dc12d6846ddd9b418bb080"/><file name="yuicompressor.jar" hash="a64311cb39d119805b41d547c8dd039d"/></dir></target><target name="mageetc"><dir name="."><file name="Ycc_minify.xml" hash=""/></dir></target></contents>
+    <date>2014-04-22</date>
+    <time>23:12:46</time>
+    <contents><target name="magecommunity"><dir name="Ycc"><dir name="Minify"><dir name="Helper"><file name="Data.php" hash="c76552b8ca8cb6f92989ec73e979e691"/></dir><dir name="Model"><file name="Observer.php" hash="e37b33adbdff3223de1651208089e209"/><dir name="System"><dir name="Config"><file name="Csscompressor.php" hash="4d974633c8490311dd9b9de43aa6c0c4"/><file name="Jscompressor.php" hash="fe8ea761560f949c844220f04704c3ff"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="86564def55d828ac058af695cb0840d7"/><file name="system.xml" hash="128b22e567d24a0f64caeaa737244452"/></dir></dir></dir></target><target name="magelib"><dir name="yccminify"><file name="HTML.php" hash="12c43b16cc5f1a2acf9d734a1ab8849b"/><file name="closurecompiler.jar" hash="d07b1f5a81dc12d6846ddd9b418bb080"/><file name="yuicompressor.jar" hash="a64311cb39d119805b41d547c8dd039d"/></dir></target><target name="mageetc"><dir name="modules"><file name="Ycc_minify.xml" hash="eaf3a4ab159a63e60f4af9759dea82ea"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.0.0</min><max>5.4.10</max></php></required></dependencies>
 </package>
