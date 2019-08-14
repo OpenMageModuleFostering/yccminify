@@ -1,0 +1,17 @@
+{
+    "name": "OpenMageModuleFostering/YccMinify",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Minify your merged CSS,JS file and HTML page!!!
+Improve your SEO!",
+    "authors": [
+    {
+        "name": "Yongcheng CHEN",
+        "email": "yongcheng.ch@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

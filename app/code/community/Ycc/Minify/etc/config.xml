@@ -1,0 +1,33 @@
+<config>
+	<modules>
+		<Ycc_Minify>
+			<version>0.1.0</version>
+		</Ycc_Minify>
+	</modules>
+	<global>
+		<models>
+			<ycc_minify>
+				<class>Ycc_Minify_Model</class>
+			</ycc_minify>
+		</models>
+		<helpers>
+			<core>
+				<rewrite>
+					<data>Ycc_Minify_Helper_Data</data>
+				</rewrite>
+			</core>
+		</helpers>
+		<events>
+			<http_response_send_before>
+				<observers>
+					<unique_label>
+						<type>singleton</type>
+						<class>ycc_minify/observer</class>
+						<method>MinifyResponse</method>
+					</unique_label>
+				</observers>
+			</http_response_send_before>
+		</events>
+	</global>
+
+</config>
